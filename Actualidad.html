@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: TrabajoT2
+autor: Jesús Guirao Melero
+fecha: Marzo 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Trabajot2</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	<link href="estiloweb.css" rel="stylesheet"/>	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="scriptweb.js"></script>
+</head>
+<body>
+
+	<div class="marco">
+		<div class="encabezado">
+	<nav>
+	<ul>
+	<li><a href="index.html"><button onclick="clickCounter()" type="button">Inicio</button></a></li>
+	<li><a href="Actualidad.html"><button onclick="clickCounter()" type="button">Actualidad</button></a></li>
+	<li><a href="#Blog"><button onclick="clickCounter()" type="button">Blog</a></li>
+	<li><a href="#Tendencias"><button onclick="clickCounter()" type="button">Tendencias</button></a></li>
+	<li><a href="#Contactar"><button onclick="clickCounter()" type="button">Contactar</button></a></li>
+	</ul>
+	</nav>
+	<div id="nVeces"></div>
+	</div>
+		<div class="migas">
+		</div>
+		<div class="lado">Lado
+			<div class="menuvertical">
+				<a href="index.html">Inicio</a>
+				<a href="Actualidad.html">Actualidad</a>
+				<a href="#">Blog</a>
+				<a href="#">Tendencias</a>
+				<a href="#">Contactar</a>
+			  </div>
+		</div>
+		
+		
+		<div class="contenido">
+				<p>Las Vulnerabilidades más comunes que se pueden sufrir en una página web pueden ser derivadas de la confiabilidad de los datos del lado del cliente que esto sería modificar los datos que proporciona el cliente a la web con la finalidad de posteriormente obtener respuestas de la web.
+					<br>
+					<br>
+					También debemos tener en cuenta la manipulación de entradas ya que un atacante lo primero que hará será intentar conseguir tener acceso al servidor en el cual se encuentra alojada la web y esto podemos categorizarlo de distintas maneras como:
+					<br>
+					-Manipulación de URL
+					<br>
+					-Inyecciones en el encabezado HTML
+					<br>
+					-Evasión de filtro de detección de intrusos
+					<br>
+					-Manipular los protocolos
+					<br>
+					-Buffer Overflow (Cuando sufre un desbordamiento de datos y no es capaz de controlar todos los datos).
+					<br>
+					Para una mayor seguridad debemos Administrar, monitorear, controlar, manejar los incidentes de seguridad y brindar soporte centralizado.
+					<br>
+					<br>
+					Para mantener la seguridad en nuestra web ya sea un cms o una web realizada debemos tener en cuenta los siguientes aspectos:
+                    En caso de ser un cms debemos mantener actualizados los plugings
+                    La web debe tener siempre el certificado SSL
+                    Debemos limitar la entrada a la parte de administrador a ser posible que no todo el mundo pueda acceder.
+                    No incluir código js del cual no conozcamos su procedencia ya que alguno puede desviar datos a otros lugares.
+					<br>
+					<br>
+					Otros de los grandes problemas de las web son las denegaciones de servicio las cuales causan muchos estragos y son difíciles de lidiar con ellas ya que la Ip del servidor es fija y visible
+					Una de las pocas maneras que hay de lidiar con los DDOS (las denegaciones de servicio) es tener replicada la web en 2 servidores de tal manera que cuando uno de ellos esté siendo atacado el otro servidor pueda continuar dando servicio a la web de tal manera que el usuario nunca vería la web fuera de servicio.
+					<br>
+					<br>
+					Los 3 tipos de ataques DDOS que tenemos son:
+					Ataques en la capa de aplicación: Son los ataques más simples e imitan las solicitudes normales al servidor desde el equipo infectado. A medida que el ataque avance, aumenta el volumen de solicitudes aparentemente legítimas y el servidor comienza a colapsar.
+					Ataques de protocolo: Este ataque se aprovecha del procesamiento de los servidores para sobrecargar y colapsar al objetivo del DDoS.
+					Ataques volumétricos: En este ataque lo que se ve afectado es el ancho de banda disponible del servidor.
+
+
+					</p>
+		</div>
+
+
+
+		<div class="pie">
+			<center>
+		<div>&copy; <b>2021 <a href="#" target="_blank"></a>------------------------------Email: Jesúsgm@micorreo.com</b></div>
+	</center>
+	</div>
+	</div>
+
+
+</body>
+</html>

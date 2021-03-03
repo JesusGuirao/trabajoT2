@@ -207,4 +207,9 @@ body{
     color: #3498db;
 }
 
+/*Numero de veces */
 
+#nVeces {
+  float: right;
+  margin-top: 25px ;
+}

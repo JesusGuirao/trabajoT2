@@ -1,23 +1,21 @@
 /* 
 JavaScript / jQuery
-web o pagina:
-autor:
-fecha:
+web o pagina: TrabajoT2
+autor: Jesús Guirao Melero
+fecha: Marzo 2021
 resumen:
 */
 
 /*Contador de veces de la pagina*/
 
-document.getElementById("nVeces").innerHTML = "Has visitado   "+sessionStorage.clickcount + " pagina(s)";
+actualizar();
+		
 function clickCounter() {
-    if(typeof(Storage) !== "undefined") {
-      if (sessionStorage.clickcount) {
-        sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
-      } else {
-        sessionStorage.clickcount = 1;
-      }
-      document.getElementById("nVeces").innerHTML = "Has visitado nuestra pagina " + sessionStorage.clickcount + " veces.";
-    } else {
-      document.getElementById("nVeces").innerHTML = "Sorry, Tu navegador no soporta web storage...";
-    }
-  }
+if(sessionStorage.contador) {
+  sessionStorage.contador = Number(sessionStorage.contador) + 1;
+}
+else{
+  sessionStorage.setItem("contador",1);
+}
+$("#nVeces").text('Has hecho click ' + sessionStorage.contador + ' veces en esta sesión.');
+} 

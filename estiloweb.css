@@ -1,6 +1,6 @@
 /*
 CSS 
-web o pagina:The Best Restaurants Of Marbella
+web o pagina:TrabajoT2
 autor: Jesús Guirao Melero
 fecha: 02/03/2021
 */
@@ -212,4 +212,27 @@ body{
 #nVeces {
   float: right;
   margin-top: 25px ;
+}
+
+
+/*Imagenes Pagina Actualidad */
+
+.imgI {
+  float:right;
+  clear:right;
+  overflow: auto;
+  margin:10px;
+  width:25%;
+  height:auto;
+  object-fit:cover;
+}
+
+.imgII {
+  float: center;
+  clear:right;
+  overflow: auto;
+  margin:10px;
+  width:20%;
+  height:10%;
+  object-fit:cover;
 }

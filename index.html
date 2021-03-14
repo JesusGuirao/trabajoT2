@@ -1,97 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<!--
+  <!--
 HTML
 web o pagina: TrabajoT2
 autor: Jesús Guirao Melero
 fecha: Marzo 2021
 -->
 
-<head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>Trabajot2</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com"/>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
-	<link href="estiloweb.css" rel="stylesheet"/>	
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="scriptweb.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trabajot2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Reggae+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="estiloweb.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="marco">
+      <div class="encabezado">
+        <nav>
+          <ul>
+            <li><a onclick="clickCounter()" href="index.html">Inicio</a></li>
+            <li>
+              <a href="Actualidad.html" onclick="clickCounter()">Actualidad</a>
+            </li>
+            <li>
+              <a href="#Blog" onclick="clickCounter()">Blog</a>
+            </li>
+            <li>
+              <a href="#Tendencias" onclick="clickCounter()">Tendencias</a>
+            </li>
+            <li>
+              <a href="#Contactar" onclick="clickCounter()">Contactar</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="nVeces"></div>
+        <script></script>
+      </div>
+      <div class="migas">
+        <b></b>
+      </div>
+      <div class="lado">
+        Lado
+        <div class="menuvertical">
+          <a href="index.html">Inicio</a>
+          <a href="Actualidad.html">Actualidad</a>
+          <a href="#">Blog</a>
+          <a href="#">Tendencias</a>
+          <a href="#">Contactar</a>
+        </div>
+      </div>
 
-	<div class="marco">
-		<div class="encabezado">
-	<nav>
-	<ul>
-	<li><a href="index.html"><button onclick="clickCounter()" type="button">Inicio</button></a></li>
-	<li><a href="Actualidad.html"><button onclick="clickCounter()" type="button">Actualidad</button></a></li>
-	<li><a href="#Blog"><button onclick="clickCounter()" type="button">Blog</a></li>
-	<li><a href="#Tendencias"><button onclick="clickCounter()" type="button">Tendencias</button></a></li>
-	<li><a href="#Contactar"><button onclick="clickCounter()" type="button">Contactar</button></a></li>
-	</ul>
-	</nav>
-	<div id="nVeces"></div>
-	<script>
+      <div class="contenido">
+        Contenido
+        <div class="container">
+          <div class="card">
+            <img src="imagenesweb/Informacion.png" />
+            <h4><b>Nombre:</b></h4>
+            <p><b>Jesús Guirao Melero</b></p>
+            <h5><b>Edad:</b></h5>
+            <p><b>20</b></p>
+            <h5><b>Nacionalidad:</b></h5>
+            <p><b>Española</b></p>
+          </div>
 
-	</script>
-	</div>
-		<div class="migas">
-			<b>Inicio</b>
-		</div>
-		<div class="lado">Lado
-			<div class="menuvertical">
-				<a href="index.html">Inicio</a>
-				<a href="Actualidad.html">Actualidad</a>
-				<a href="#">Blog</a>
-				<a href="#">Tendencias</a>
-				<a href="#">Contactar</a>
-			  </div>
-		</div>
-		
-		
-		<div class="contenido">Contenido
-			<div class="container">
-       
-				<div class="card">
-					<img src="imagenesweb/Informacion.png">
-					<h4><B>Nombre:</B></h4>
-					<p><B>Jesús Guirao Melero</B></p>
-					<h5><B>Edad:</B></h5>
-					<p><B>20</B></p>
-					<h5><B>Nacionalidad:</B></h5>
-					<p><B>Española</B></p>
-					
-				</div>
-				
-				<div class="card">
-					<img src="imagenesweb/dam.png">
-					<h4>DAM</h4>
-					<p><B>Realmente no sabia que elegir era un poco a la aventura elegí dam por que finalmente era por la mañana aunque actualmente me estoy dando cuenta que me gusta más el desarrollo Web.</B></p>
-					
-				</div>
-				
-				<div class="card">
-					<img src="imagenesweb/elcentro.png">
-					<h4>El Centro</h4>
-					<p><B>Cenec es un centro el cual se encuentra ubicado en 	C/ Hernán Ruiz 6  su número de teléfono es 952 21 67 01 es un centro orientado exclusivamente a la formación en el sector IT.</B></p>
-					
-				</div>
+          <div class="card">
+            <img src="imagenesweb/dam.png" />
+            <h4>DAM</h4>
+            <p>
+              <b
+                >Realmente no sabia que elegir era un poco a la aventura elegí
+                dam por que finalmente era por la mañana aunque actualmente me
+                estoy dando cuenta que me gusta más el desarrollo Web.</b
+              >
+            </p>
+          </div>
 
-				
-			  </div>
-		</div>
+          <div class="card">
+            <img src="imagenesweb/elcentro.png" />
+            <h4>El Centro</h4>
+            <p>
+              <b
+                >Cenec es un centro el cual se encuentra ubicado en C/ Hernán
+                Ruiz 6 su número de teléfono es 952 21 67 01 es un centro
+                orientado exclusivamente a la formación en el sector IT.</b
+              >
+            </p>
+          </div>
+        </div>
+      </div>
 
-
-
-		<div class="pie">
-			<center>
-		<div>&copy; <b>2021 <a href="#" target="_blank"></a>------------------------------Email: Jesúsgm@micorreo.com</b></div>
-	</center>
-	</div>
-	</div>
-
-
-</body>
+      <div class="pie">
+        <center>
+          <div>
+            &copy;
+            <b
+              >2021
+              <a href="#" target="_blank"></a
+              >------------------------------Email: Jesúsgm@micorreo.com</b
+            >
+          </div>
+        </center>
+      </div>
+    </div>
+    <script src="scriptweb.js"></script>
+  </body>
 </html>

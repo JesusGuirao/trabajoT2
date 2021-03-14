@@ -4,17 +4,16 @@ web o pagina:TrabajoT2
 autor: Jesús Guirao Melero
 fecha: 02/03/2021
 */
-* {
-  font-family: 'Orbitron', sans-serif;
-}
 
 body {
   background-image: url('imagenesweb/mar.jpg');
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .encabezado nav ul li a {
@@ -23,8 +22,7 @@ body {
 
 .marco {
   display: grid;
-  border-style: solid;
-  border-color: red;
+
   grid-template-columns: 250px auto;
   grid-template-rows: 150px 40px auto 40px;
   grid-gap: 10px;
@@ -33,36 +31,32 @@ body {
 }
 
 .encabezado {
-  border-style: solid;
-  border-color: blue;
   grid-column: 1 / span 2;
   grid-row: 1 / span 1;
 }
 
+.migas b {
+  margin: 20px;
+  text-decoration: none;
+  list-style: none;
+}
 .migas {
-  border-style: solid;
-  border-color: yellow;
+  float: right;
   grid-column: 1 / span 2;
   grid-row: 2 / span 1;
 }
 
 .lado {
-  border-style: solid;
-  border-color: violet;
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
 }
 
 .contenido {
-  border-style: solid;
-  border-color: violet;
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
 }
 
 .pie {
-  border-style: solid;
-  border-color: aqua;
   grid-column: 1 / span 2;
   grid-row: 4 / span 1;
 }
@@ -213,6 +207,7 @@ body {
 
 #nVeces {
   float: right;
+  margin-right: 58px;
   margin-top: 25px;
 }
 
@@ -236,4 +231,10 @@ body {
   width: 20%;
   height: 10%;
   object-fit: cover;
+}
+
+/*Texto de la pagina actualidad */
+
+.textoactualidad {
+  margin: 10px;
 }

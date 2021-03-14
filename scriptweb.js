@@ -26,4 +26,6 @@ function clickCounter() {
   );
 }
 
-$('.migas b').text(document.location.href.match(/[^\/]+$/)[0].split('.')[0]);
+//Donde me encuentro
+// Inicio o actualidad
+document.querySelector('body > div > div.migas > ul');

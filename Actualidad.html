@@ -43,24 +43,40 @@ fecha: Marzo 2021
 	<div id="nVeces"></div>
 	</div>
 		<div class="migas">
-			<b></b>
+			<ul class="breadcrumb">
+				<a href="index.html" style="text-decoration:none" ><b>Inicio</b> </a> 
+				<a href="#" style="text-decoration:none"><b>/ Actualidad</b></a>
+			</ul>
 		</div>
-		<div class="lado">Lado
+		<div class="lado">
 			<div class="menuvertical">
-				<a href="index.html">Inicio</a>
-				<a href="Actualidad.html">Actualidad</a>
-				<a href="#">Blog</a>
-				<a href="#">Tendencias</a>
-				<a href="#">Contactar</a>
+				<ul>
+					<li><a onclick="clickCounter()" href="index.html">Inicio</a></li>
+					<li>
+					  <a href="Actualidad.html" onclick="clickCounter()">Actualidad</a>
+					</li>
+					<li>
+					  <a href="#Blog" onclick="clickCounter()">Blog</a>
+					</li>
+					<li>
+					  <a href="#Tendencias" onclick="clickCounter()">Tendencias</a>
+					</li>
+					<li>
+					  <a href="#Contactar" onclick="clickCounter()">Contactar</a>
+					</li>
+				  </ul>
 			  </div>
 		</div>
 		
 		
 		<div class="contenido">
-				<p>Las Vulnerabilidades más comunes que se pueden sufrir en una página web pueden ser derivadas de la confiabilidad de los datos del lado del cliente que esto sería modificar los datos que proporciona el cliente a la web con la finalidad de posteriormente obtener respuestas de la web.
+			<div class="textoactualidad">
+				<h1>De que y Como debemos proteger nuestro sitio web</h1>
+				<br>
+				<p>Las Vulnerabilidades más comunes que se pueden sufrir en una página web pueden ser derivadas de la confiabilidad de los datos del lado del cliente que esto sería modificar<br> los datos que proporciona el cliente a la web con la finalidad de posteriormente obtener respuestas de la web.
 					<br>
 					<br>
-					También debemos tener en cuenta la manipulación de entradas ya que un atacante lo primero que hará será intentar conseguir tener acceso al servidor en el cual se encuentra alojada la web y esto podemos categorizarlo de distintas maneras como:
+					También debemos tener en cuenta la manipulación de entradas ya que un atacante lo primero que hará será intentar conseguir tener acceso al servidor en el cual<br> se encuentra alojada la web y esto podemos categorizarlo de distintas maneras como:
 					<br>
 					-Manipulación de URL
 					<br>
@@ -73,6 +89,7 @@ fecha: Marzo 2021
 					-Buffer Overflow (Cuando sufre un desbordamiento de datos y no es capaz de controlar todos los datos).
 					<img class="imgI" src="imagenesweb/segweb.jpg"/>
 					<br>
+					<br>
 					Para una mayor seguridad debemos Administrar, monitorear, controlar, manejar los incidentes de seguridad y brindar soporte centralizado.
 					<br>
 					<br>
@@ -83,13 +100,14 @@ fecha: Marzo 2021
                     No incluir código js del cual no conozcamos su procedencia ya que alguno puede desviar datos a otros lugares.
 					<br>
 					<br>
-					Otros de los grandes problemas de las web son las denegaciones de servicio las cuales causan muchos estragos y son difíciles de lidiar con ellas ya que la Ip del servidor es fija y visible
-					Una de las pocas maneras que hay de lidiar con los DDOS (las denegaciones de servicio) es tener replicada la web en 2 servidores de tal manera que cuando uno de ellos esté siendo atacado el otro servidor pueda continuar dando servicio a la web de tal manera que el usuario nunca vería la web fuera de servicio.
+					Otros de los grandes problemas de las web son las denegaciones de servicio las cuales causan muchos estragos y son difíciles de lidiar con ellas,<br>
+					 ya que la Ip del servidor es fija y visible
+					Una de las pocas maneras que hay de lidiar con los DDOS (las denegaciones de servicio) es tener replicada la web<br> en 2 servidores de tal manera que cuando uno de ellos esté siendo atacado el otro servidor pueda continuar dando servicio a la web de tal manera<br> que el usuario nunca vería la web fuera de servicio.
 					<br>
 					<br>
 					<b>Los 3 tipos de ataques DDOS que tenemos son:</b>
 					<br>
-					Ataques en la capa de aplicación: Son los ataques más simples e imitan las solicitudes normales al servidor desde el equipo infectado. A medida que el ataque avance, aumenta el volumen de solicitudes aparentemente legítimas y el servidor comienza a colapsar.
+					Ataques en la capa de aplicación: Son los ataques más simples e imitan las solicitudes normales al servidor desde el equipo infectado. A medida que el ataque avance,<br> aumenta el volumen de solicitudes aparentemente legítimas y el servidor comienza a colapsar.
 					<br>
 					Ataques de protocolo: Este ataque se aprovecha del procesamiento de los servidores para sobrecargar y colapsar al objetivo del DDoS.
 					<br>
@@ -103,14 +121,17 @@ fecha: Marzo 2021
 					<br>
 					<h3>Noticia Actual: El Sepe sufre un ataque informático.</h3>
 					<br>
-					<p>Últimamente han ocurrido Ataques informáticos a Sistemas públicos como en este caso ha podido ser a la web del SEPE (Servicio Público Estatal de Empleo) y también se ha visto afectado su sistema informático completo de tal manera que ni el portal virtual funciona.
+					<p>Últimamente han ocurrido Ataques informáticos a Sistemas públicos como en este caso ha podido ser a la web del SEPE (Servicio Público Estatal de Empleo)<br> y también se ha visto afectado su sistema informático completo de tal manera que ni el portal virtual funciona.
 						<br>
-						Todavía no se tiene con certeza, pero se cree que ha sido un malware de tipo Ransomware, este malware lo que hace es un “Secuestro de archivos” para posteriormente pedir un rescate por ellos. Se cree que el software usado es un software llamado “Ryuk” un software ruso el cual ya fue usado para atacar al ayuntamiento de jerez en octubre de 2019 y realizó grandes estragos en la administración.
 						<br>
-						Hay varias hipótesis de cómo ha podido entrar al sistema del SEPE, una de ellas es que ha sido a través de phising y a los trabajadores y otra de ellas es que ha entrado por puertos los cuales estaban abiertos y reducían la seguridad.
+						Todavía no se tiene con certeza, pero se cree que ha sido un malware de tipo Ransomware, este malware lo que hace es un “Secuestro de archivos” <br> para posteriormente pedir un rescate por ellos. Se cree que el software usado es un software llamado “Ryuk” un software ruso el cual ya fue usado para atacar al ayuntamiento de jerez en octubre de 2019 y realizó grandes estragos en la administración.
+						<br>
+						<br>
+						Hay varias hipótesis de cómo ha podido entrar al sistema del SEPE, una de ellas es que ha sido a través de phising y a los trabajadores y <br> otra de ellas es que ha entrado por puertos los cuales estaban abiertos y reducían la seguridad.
+						<br>
 						<br>
 						Ya es el segundo día que el portal virtual y la página web del SEPE no funcionan a causa del ataque sufrido.
-
+						<br>
 						
 					</p>
 					<p>Enlace a
@@ -118,10 +139,12 @@ fecha: Marzo 2021
 						</p>
 						<img class="imgII" src="imagenesweb/sepe.jpg"/>
 					</p>
-
+					<br>
+					<br>
 					<p>
-						<h3>Como evitar ataques informáticos a nuestro sitio web.</h3>
+						
 					</p>
+				</div>
 		</div>
 		<div class="pie">
 			<center>

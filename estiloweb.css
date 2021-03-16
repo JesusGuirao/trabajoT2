@@ -54,6 +54,8 @@ body {
 .contenido {
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .pie {
